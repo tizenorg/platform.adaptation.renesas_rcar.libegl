@@ -5,7 +5,8 @@ libEGL_la_SOURCES =	\
 
 libEGL_la_LIBADD =	\
 	@LIBGBM_LIBS@ \
-	@WAYLAND_KMS_LIBS@
+	@WAYLAND_KMS_LIBS@ \
+	-ldl
 
 
 libEGL_la_CFLAGS =	\
