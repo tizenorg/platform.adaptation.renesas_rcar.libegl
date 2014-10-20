@@ -537,7 +537,6 @@ static EGLBoolean __eglBindWaylandDisplayWL(EGLDisplay dpy,
 
 	if (__gbm) {
 		fd = gbm_device_get_fd(__gbm);
-		device_name = _gbm_fd_get_device_name(fd);
 	} else {
 		fd = open(device_name, O_RDWR);
 		if (fd < 0)
