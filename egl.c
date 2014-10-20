@@ -52,8 +52,7 @@
 
 #ifdef WANT_WAYLAND
 #include <wayland-kms.h>
-#include <gbm/gbm.h>
-#include <gbm/common.h>
+#include <gbm.h>
 #endif
 
 static EGLint(*_eglGetError) (void);
